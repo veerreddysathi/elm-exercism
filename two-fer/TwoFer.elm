@@ -32,4 +32,9 @@ twoFer name =
             "One for " ++ validName ++ ", one for me."
 
 -- SOLUTION 2 (Using Maybe.withDefault)
+module TwoFer exposing (twoFer)
 
+
+twoFer : Maybe String -> String
+twoFer name =
+    "One for " ++ Maybe.withDefault "you" name ++ ", one for me."
